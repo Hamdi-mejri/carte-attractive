@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+ 
+<link type="text/css" rel="stylesheet" href="mapN.css" />  
+<link type="text/css" rel="stylesheet" href="reset.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+   
+   
+  <script src="jquery-2.1.4.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <script src="script_go2.js"></script>
+
+  
+  
+</head>
+<body>
+<div class="container">
+	
+	<!--<section class="blue-section">
+		<div class="cd-pricing-container">
+	<div class="cd-pricing-switcher">
+		<p class="fieldset">
+			<input type="radio" name="duration" value="monthly" id="monthly" checked>
+			<label for="monthly">Monthly</label>
+			<input type="radio" name="duration" value="yearly" id="yearly">
+			<label for="yearly">Yearly</label>
+			<span class="cd-switch"></span>
+		</p>
+	</div> <!-- .cd-pricing-switcher -->
+ <div class="cd-pricing-container">
+	<ul class="cd-pricing-list">
+		<li>
+			<ul class="cd-pricing-wrapper" style="background-color:#004a7f">
+				<li data-type="monthly" class="is-visible">
+					<header class="cd-pricing-header">
+						<h2>0-10 KM</h2>
+						<div class="cd-price">
+						    <span id="pz1" class="cd-value">10-19</span>
+							<span class="cd-currency"> euros</span>
+							
+						</div>
+					</header> <!-- .cd-pricing-header -->
+ 
+					<!-- <div class="cd-pricing-body">
+						<ul class="cd-pricing-features">
+							<li><em>256MB</em> Memory</li>
+							
+						</ul>
+					</div> .cd-pricing-body -->
+ 
+					
+				</li>
+
+				
+			</ul> <!-- .cd-pricing-wrapper -->
+			
+		</li>
+ 
+         <li>
+			<ul class="cd-pricing-wrapper" style="background-color:#0061a6 ">
+				<li data-type="monthly" class="is-visible">
+					<header class="cd-pricing-header">
+						<h2>10-25 KM</h2>
+						<div class="cd-price">
+						    <span id="pz2" class="cd-value">19-35</span>
+							<span class="cd-currency"> euros</span>
+							
+							
+						</div>
+					</header> <!-- .cd-pricing-header -->
+ 
+					
+ 
+					
+				</li>
+
+				
+			</ul> <!-- .cd-pricing-wrapper -->
+			
+		</li>
+		
+		 <li>
+			<ul class="cd-pricing-wrapper" style="background-color:#0078cd">
+				<li data-type="monthly" class="is-visible">
+					<header class="cd-pricing-header">
+						<h2>25-45 KM</h2>
+						<div class="cd-price">
+							<span id="pz3" class="cd-value">40-60</span>
+							<span class="cd-currency"> euros</span>
+							
+						</div>
+					</header> <!-- .cd-pricing-header -->
+ 
+					
+ 
+					
+				</li>
+
+				
+			</ul> <!-- .cd-pricing-wrapper -->
+			
+		</li>
+		
+	</ul> <!-- .cd-pricing-list -->
+</div> <!-- .cd-pricing-container -->
+	
+
+	
+	<span id="element" style="display:none"></span>
+	    <div class="myText"><span></span></div>
+		<div style="width:864px;margin-left:50px">
+	<span> Merci de sélectionner la source du trajet </span>	
+		<select id="source" autocomplete="off">
+  <option value="dreux" selected="selected">Dreux</option>
+  <option value="chartres">Chartres</option>
+  <option value="plaisir">Plaisir</option>
+  <option value="evreux" >Evreux</option>
+</select>
+<span>    destination</span>
+<input id="destination" ></input>
+<button id="search" onclick="high($('#destination').val(), $('#source').val())">Rechercher</button>
+<div class="zone" style="display:block;float:right">
+<span > Zone </span>	
+		<select id="choixzone" onclick="zonage($(this).val(),$('#source').val())" autocomplete="off" >
+  <option value="0" selected="selected">Toutes</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3" >3</option>
+</select>
+</div></div>
+		<div class="mapcontainer" style="background-color:white">
+			<div id="googleMap" style="width:864px;height:700px;margin-left:50px"></div>
+				
+			</div>
+		</div>
+</div>
+</body>
+</html>

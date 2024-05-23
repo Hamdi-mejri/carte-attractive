@@ -1,0 +1,19 @@
+    .container {
+            background: white;
+	color: black;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	overflow: auto;
+	width: 960px;
+        }
+
+		body {
+	background: white;
+	font: normal normal normal 18px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
+	
+}
+	
+		h1 {
+			color:#5d5d5d;
+			font-size:30px;
+		}

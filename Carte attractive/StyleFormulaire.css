@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+legend{
+	font-size:36px;
+	color:#039;}
+label {
+ margin-top:10px;
+ display:block;
+ }
+#titre{
+	font-size:24px;
+	color:#999;
+	font-weight:bold;
+}
+fieldset{
+	width:50%;
+	}
+	
+#b1,#b2{
+	width:100px;
+	height:30px;
+	margin:5px;
+	
+	}
+label{
+	font-size:19px;
+	font-weight:bold;
+	}
